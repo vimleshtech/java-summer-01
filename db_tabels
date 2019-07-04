@@ -1,0 +1,35 @@
+Table Name: 	Account_Type
+at_no   name
+1        Current Account
+2        Saving Account 
+	
+create table account_type(actype_no int auto_increment primary key,name varchar(100));
+
+Table Name : Accouunt
+ac_no fname lname email gender phoneno create_date status actype_no
+1  raman  sinha  ra@gmail.com m 565445  2019-06-04  1   2
+
+create table Account(ac_no int auto_increment primary ,
+fname varchar(30), lname varchar(30), email varchar(30),
+gender varchar(10), phoneno varchar(15), create_date date,
+status char(1),actype_no int);
+
+
+Table Name: Transactions
+tid ac_no amt entry_date  tran_type
+1    1    10000 2019-06-04  DR
+2    2    10000 2019-06-04  CR
+
+create table transactions(tid int auto_increment primary ,
+ac_no int,
+amt int,
+entry_date date,
+tran_type char(2)
+);
+
+
+desc tablename;
+	
+
+
+
